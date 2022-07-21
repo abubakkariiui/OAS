@@ -4,6 +4,8 @@ import connectDB from "./config/db.js";
 import colors from "colors";
 import path from "path";
 
+import projectRoutes from "./routes/projectRoutes.js";
+import feedBackRoutes from "./routes/feedBackRoutes.js";
 import userRoutes from "./routes/userRoutes.js";
 import { errorHandler, notFound } from "./middleware/errorMiddleware.js";
 
@@ -16,6 +18,8 @@ const app = express(); // main thing
 app.use(express.json()); // to accept json data
 
 app.use("/api/users", userRoutes);
+app.use("/api/feedback", feedBackRoutes);
+app.use("/api/project", projectRoutes);
 
 // --------------------------deployment------------------------------
 const __dirname = path.resolve();
