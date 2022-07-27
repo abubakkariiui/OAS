@@ -47,6 +47,7 @@ import SignUp from "layouts/authentication/sign-up";
 
 // @mui icons
 import Icon from "@mui/material/Icon";
+import Project from "layouts/project/Project";
 
 const routes = [
   {
@@ -75,11 +76,11 @@ const routes = [
   },
   {
     type: "collapse",
-    name: "RTL",
-    key: "rtl",
+    name: "Project",
+    key: "project",
     icon: <Icon fontSize="small">format_textdirection_r_to_l</Icon>,
-    route: "/rtl",
-    component: <RTL />,
+    route: "/project",
+    component: <Project />,
   },
   {
     type: "collapse",
