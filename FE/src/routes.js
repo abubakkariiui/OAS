@@ -78,7 +78,7 @@ const routes = [
     type: "collapse",
     name: "Project",
     key: "project",
-    icon: <Icon fontSize="small">format_textdirection_r_to_l</Icon>,
+    icon: <Icon fontSize="small">home</Icon>,
     route: "/project",
     component: <Project />,
   },
